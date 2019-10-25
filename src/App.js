@@ -1,4 +1,5 @@
 import React from 'react';
+import 'dotenv/config';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
