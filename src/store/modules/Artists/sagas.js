@@ -4,7 +4,7 @@ import { getArtistsSuccess, getTracksSuccess } from './actions';
 
 export function* getArtist({ payload }) {
   try {
-    api.defaults.headers.Authorization = `Bearer ${process.env.API_KEY}`;
+    api.defaults.headers.Authorization = `Bearer ${process.env.REACT_APP_API_KEY}`;
     const { ids } = payload;
     const response = yield call(api.get, `/artists`, { params: { ids } });
     const { artists } = response.data;
